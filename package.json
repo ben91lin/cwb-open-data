@@ -1,0 +1,22 @@
+{
+  "name": "taiwan-forecast-map-data",
+  "version": "1.0.0",
+  "description": "Extract, transform and load forecast data from https://opendata.cwb.gov.tw/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ben91lin/taiwan-forecast-map-data.git"
+  },
+  "author": "ABen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ben91lin/taiwan-forecast-map-data/issues"
+  },
+  "homepage": "https://github.com/ben91lin/taiwan-forecast-map-data#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
