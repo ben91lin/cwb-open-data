@@ -1,2 +1,5 @@
 # taiwan-forecast-map-data
-ETL data from https://opendata.cwb.gov.tw/
+
+Extract, transform and load forecast data from https://opendata.cwb.gov.tw/
+
+API documentation - https://opendata.cwb.gov.tw/dist/opendata-swagger.html#/
