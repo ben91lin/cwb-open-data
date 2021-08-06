@@ -1,4 +1,4 @@
-const Cwb = require(`${__dirname}/cwb_api`).Cwb;
+const Cwb = require('..').Cwb;
 
 (
     async function() {
