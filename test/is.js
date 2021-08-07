@@ -1,6 +1,6 @@
 const assert = require('assert')
 const should = require('should')
-const is = require('../lib/is')
+const is = require('../lib/check/is')
 
 describe('is.object()', function() {
     it('should return true if type is Object', function() {

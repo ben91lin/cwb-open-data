@@ -1,4 +1,4 @@
-const objectHas = require('../lib/obj-has')
+const objectHas = require('../lib/check/obj-has')
 
 describe('objectHas.plainObject()', function() {
     it('should return true if object has object protperty', function() {
