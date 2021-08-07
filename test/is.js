@@ -3,36 +3,29 @@ const should = require('should')
 const is = require('../lib/is')
 
 describe('is.object()', function() {
-    it('should return true when type is Object', function(done) {
+    it('should return true if type is Object', function() {
         is.object({}).should.equal(true)
-        done()
     })
 
-    it('should return true when type is Null', function(done) {
+    it('should return true if type is Null', function() {
         is.object([]).should.equal(true)
-        done()
     })
 
-    it('should return false when type is null', function(done) {
+    it('should return false if type is null', function() {
         assert.strictEqual(is.object(null), false)
-        done()
     })
 })
 
 describe('is.plainObject()', function() {
-    it('should return true when type is Object', function(done) {
-        
+    it('should return true if type is Object', function() {
         is.plainObject({}).should.equal(true)
-        done()
     })
 
-    it('should return false when type is Array', function(done) {
+    it('should return false if type is Array', function() {
         is.plainObject([]).should.equal(false)
-        done()
     })
 
-    it('should return false when type is null', function(done) {
+    it('should return false if type is null', function() {
         assert.strictEqual(is.plainObject(null), false)
-        done()
     })
 })
