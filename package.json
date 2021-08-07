@@ -4,7 +4,7 @@
   "description": "Extract, transform and load forecast data from https://opendata.cwb.gov.tw/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "homepage": "https://github.com/ben91lin/taiwan-forecast-map-data#readme",
   "dependencies": {
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.3",
+    "should": "^13.2.3"
   }
 }
