@@ -1,4 +1,4 @@
-# taiwan-forecast-map-data
+# cwb-open-data
 
 Extract, transform and load forecast data from https://opendata.cwb.gov.tw/
 
@@ -19,11 +19,11 @@ ATTENTION!! The data F-C0032-001 doesn't have geocode. If you want to find geoco
         }
     )()
 
-# Output
+# Output Method
 
-## default
+* default
 
-## flatten
+* flatten
 
     [
         ...,
@@ -45,7 +45,7 @@ ATTENTION!! The data F-C0032-001 doesn't have geocode. If you want to find geoco
         ...
     ]
 
-## simpilfy
+* simpilfy
     [
         ...,
         {
@@ -77,4 +77,4 @@ ATTENTION!! The data F-C0032-001 doesn't have geocode. If you want to find geoco
         ...
     ]
 
-## customize
+* customize
