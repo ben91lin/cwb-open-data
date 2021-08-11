@@ -52,7 +52,6 @@ ATTENTION!! The data F-C0032-001 doesn't have geocode. If you want to find geoco
             {
                 startTime: '2021-08-11 00:00:00',
                 endTime: '2021-08-11 06:00:00',
-                description: '12小時降雨機率',
                 locationName: '新竹縣',
                 geocode: '10004000',
                 lat: '24.841245',
