@@ -10,21 +10,69 @@ ATTENTION!! The data F-C0032-001 doesn't have geocode. If you want to find geoco
 
     const cwb = require('cwb-open-data')
 
+    ```javascript
     (
         async function() {
             const forecast = await cwb.forecast(ids = ['F-C0032-001'], auth = '')
-            // output
+            // output method
             forecast.default()
+            // customize output by callback
+            forecast.customize(cb)
             forecast.flatten()
+            forecast.simplify()
         }
     )()
+    ```
 
-# Output Method
+# Output
 
 * default
 
+    ```javascript
+        [
+            {
+                datasetDescription: '臺灣各縣市鄉鎮未來1週逐12小時天氣預報',
+                locationsName: '台灣',
+                dataid: 'D0047-091',
+                location: [
+                    ...,
+                    {
+                        locationName: '新竹縣',
+                        geocode: '10004000',
+                        lat: '24.841245',
+                        lon: '120.995698',
+                        weatherElement: [
+                            ...,
+                            {
+                            "elementName": "PoP12h",
+                            "description": "12小時降雨機率",
+                            "time": [
+                                ...,
+                                {
+                                    "startTime": "2021-08-12 18:00:00",
+                                    "endTime": "2021-08-13 06:00:00",
+                                    "elementValue": [
+                                        {
+                                            "value": "20",
+                                            "measures": "百分比"
+                                        }
+                                    ]
+                                },
+                                ...,
+                                ]
+                            },
+                            ...
+                        ]
+                    },
+                    ...
+                ]
+            }
+        ]
+    ```
+
 * flatten
 
+    ```javascript
         [
             ...,
             {
@@ -44,9 +92,13 @@ ATTENTION!! The data F-C0032-001 doesn't have geocode. If you want to find geoco
             },
             ...
         ]
+    ```
 
-* simpilfy
+* simplify
 
+The simplify method will
+
+    ```javascript
         [
             ...,
             {
@@ -76,5 +128,4 @@ ATTENTION!! The data F-C0032-001 doesn't have geocode. If you want to find geoco
             },
             ...
         ]
-
-* customize
+    ```
